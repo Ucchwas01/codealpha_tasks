@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#EEF2F7">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quote App"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Category -->
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Quote Card -->
+    <LinearLayout
+        android:id="@+id/quoteCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:elevation="6dp">
+
+        <TextView
+            android:id="@+id/quoteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Quote Here"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF5722"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/newQuoteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Quote"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/onlineQuoteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Online Quote"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Dark Mode -->
+    <Switch
+        android:id="@+id/darkModeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

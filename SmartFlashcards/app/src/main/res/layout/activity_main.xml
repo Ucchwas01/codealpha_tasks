@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#EEF2F7">
+
+    <!-- Title -->
+    <TextView
+        android:text="Smart Flashcards"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Card -->
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/questionText"
+            android:text="Question"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/answerText"
+            android:text="Answer"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Show Answer -->
+    <Button
+        android:id="@+id/showAnswerBtn"
+        android:text="Show Answer"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"/>
+
+    <!-- Next / Previous -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/prevBtn"
+            android:text="Previous"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:text="Next"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Add/Delete -->
+    <Button
+        android:id="@+id/addBtn"
+        android:text="Add Flashcard"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:text="Delete Flashcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Dark Mode -->
+    <Switch
+        android:id="@+id/darkModeSwitch"
+        android:text="Dark Mode"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
